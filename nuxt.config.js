@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Watson',
+    title: 'Watsons',
     htmlAttrs: {
       lang: 'en'
     },
@@ -15,7 +15,10 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {rel:"preconnect", href:"https://fonts.googleapis.com"},
+      {rel:"preconnect", href:"https://fonts.gstatic.com"},
+      {href:"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;700&display=swap", rel:"stylesheet"}
     ]
   },
 
@@ -27,8 +30,8 @@ export default {
   plugins: [
   ],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  // Auto import components: https://go.nuxtjs.dev/config-components 
+  components: false,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
