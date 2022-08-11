@@ -98,3 +98,49 @@
     color: #FFFFFF;
 }
 </style>
+
+<style>
+@media screen and (max-width: 375px){
+.footer-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 375px;
+    height: 144px;
+    padding: 16px;
+    background: #F2F0FF;
+}
+.input-container{
+    margin: 0 16px;
+    width: 343px;
+    
+}
+.input{
+    width: 220px;
+}
+.button{
+    width: 107px;
+}
+.news-text {
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+
+color: #2A2A48;
+
+}
+.text-container{
+    margin:0 0 16px -35px ;
+
+}
+.offers-text {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(42, 42, 72, 0.6)
+}
+}
+</style>
