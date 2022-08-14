@@ -59,6 +59,7 @@ export default {
 <style>
 .product-list-container{
     display: flex;
+    justify-content: space-between;
     margin:40px 140px;
 }
 .product-card{

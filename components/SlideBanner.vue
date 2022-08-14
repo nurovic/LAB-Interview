@@ -46,6 +46,7 @@ export default {
 <style >
 .slide-container {
   display: flex;
+  justify-content:space-around;
 }
 .VueCarousel-navigation-prev{
   position: absolute;
@@ -63,7 +64,7 @@ export default {
 }
 
 .carousel-wrapper {
-  max-width: 1440px;
+  max-width: 100%;
   height: 400px;
   margin-bottom:40px;
   background: linear-gradient(87.81deg, #F2F0FF 35.04%, rgba(255, 255, 255, 0.67) 53.63%, rgba(252, 252, 255, 0.96) 64.78%, #F2F0FF 90.91%), #F2F0FF;
@@ -81,12 +82,12 @@ export default {
   padding:26px 0;
   object-fit:fill;
 }
-
-.VueCarousel-dot {
-  position: relative;
+.VueCarousel-dot-container[data-v-438fd353]{
+    position: relative;
   top:-170px;
-  left:-540px;
+  left: -35%;
 }
+
 .banner-brand {
   font-weight: 700;
   font-size: 14px;
