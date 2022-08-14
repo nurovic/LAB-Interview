@@ -24,7 +24,7 @@
     padding: 0px;
 
     position: absolute;
-    width: 1445px;
+    width: 100%;
     height: 144px;
     padding: 0 142.5px;
 
