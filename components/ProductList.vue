@@ -4,7 +4,8 @@ import { mapActions } from "vuex";
 export default {
     data(){
         return{
-            products: []
+            products: [],
+            isLoading: true
         }
     },
     methods: {
@@ -15,6 +16,7 @@ export default {
   },
     async mounted() {
     await this.getProduct();
+    this.isLoading = false
   },
 }
 </script>
@@ -22,7 +24,8 @@ export default {
 
 <template>
     <div class="product-list-container">
-        <div class="product-card" v-for="product in products" :key="product.id">
+        <div v-if="isLoading">Loading...</div>
+        <div v-else class="product-card" v-for="product in products" :key="product.id">
             <div class="img-container">
                 <div class="product-img-container">
                     <img class="product-image" :src="product.thumbnail" :alt="product.thumbnail" />

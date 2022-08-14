@@ -48,7 +48,7 @@ export default {
   display: flex;
 }
 .VueCarousel-navigation-prev{
-  position: relative;
+  position: absolute;
   left: 55px !important;
   font-weight: 400;
   font-size: 32px;
@@ -195,13 +195,9 @@ color: #8493A8;
   font-weight: 700;
 font-size: 24px;
 line-height: 32px;
-/* identical to box height, or 133% */
-
 display: flex;
 align-items: center;
 letter-spacing: -0.2px;
-
-/* Neutral/Coal */
 
 color: #2A2A48;
 }
